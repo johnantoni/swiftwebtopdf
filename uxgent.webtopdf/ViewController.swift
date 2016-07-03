@@ -31,11 +31,6 @@ class ViewController: NSViewController {
         //let req = NSURLRequest(URL: url!)
         //webView.loadRequest(req)
         //self.view.addSubview(webView)
-
-        // load file as string (working)
-        //let fileAsString = readFromDocumentsFile("/uxgent.webtopdf.app/Contents/Resources/www/index.html")
-        //webView.loadHTMLString(fileAsString, baseURL: nil)
-        //self.view.addSubview(webView)
         
         //load a local html file (working)
         let localfilePath = NSBundle.mainBundle().URLForResource("www/index", withExtension: "html");
