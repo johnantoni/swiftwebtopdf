@@ -48,31 +48,17 @@ class ViewController: NSViewController {
         webView.loadRequest(req)
         self.view.addSubview(webView)
         
-//        do {
-//            let template = try Template(named: "document")
-//            let aPDFDocument = PDFDocument()
-//            aPDFDocument.insertPage(<#T##page: PDFPage!##PDFPage!#>, atIndex: <#T##Int#>)
-//        }
-//        } catch {
-//            print("Error occured")
-//        }
-        //let testFrame : CGRect = CGRectMake(0,200,320,200)
-        //let testView : NSView = NSView(frame: testFrame)
-        //let testWebView = WKWebView(frame: testFrame)
-        //testView.addSubview(testWebView)
-        //createPDFFromView(testView, saveToDocumentWithFileName: "test.pdf")
+        createPDFFromView(webView, saveToDocumentWithFileName: "test.pdf")
     }
-
-//    http://stackoverflow.com/questions/15813005/creating-pdf-file-from-uiwebview
     
-//    func createPDFFromView(aView: NSView, saveToDocumentWithFileName fileName: String) {
-//        let pdfData = aView.dataWithPDFInsideRect(aView.frame)
-//        if let documentDirectories = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first {
-//            let documentsFileName = documentDirectories + "/" + fileName
-//            debugPrint(documentsFileName)
-//            pdfData.writeToFile(documentsFileName, atomically: true)
-//        }
-//    }
+    func createPDFFromView(aView: NSView, saveToDocumentWithFileName fileName: String) {
+        let pdfData = aView.dataWithPDFInsideRect(aView.frame)
+        if let documentDirectories = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first {
+            let documentsFileName = documentDirectories + "/" + fileName
+            debugPrint(documentsFileName)
+            pdfData.writeToFile(documentsFileName, atomically: true)
+        }
+    }
     
 }
 
