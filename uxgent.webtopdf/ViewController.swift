@@ -20,20 +20,29 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadHTMLFile("www/index")
+    }
+    
+    // load html string (working)
+    func loadHTMLString() {
         let webView = WKWebView(frame: self.view.frame)
-        
-        // load html string (working)
-        //webView.loadHTMLString("<html><body><p>Hello, World!</p></body></html>", baseURL: nil)
-        //self.view.addSubview(webView)
-        
-        // load url (working)
-        //let url = NSURL(string: "https://www.google.ca")
-        //let req = NSURLRequest(URL: url!)
-        //webView.loadRequest(req)
-        //self.view.addSubview(webView)
-        
-        //load a local html file (working)
-        let localfilePath = NSBundle.mainBundle().URLForResource("www/index", withExtension: "html");
+        webView.loadHTMLString("<html><body><p>Hello, World!</p></body></html>", baseURL: nil)
+        self.view.addSubview(webView)
+    }
+    
+    // load url (working)
+    func loadURL() {
+        let webView = WKWebView(frame: self.view.frame)
+        let url = NSURL(string: "https://www.google.ca")
+        let req = NSURLRequest(URL: url!)
+        webView.loadRequest(req)
+        self.view.addSubview(webView)
+    }
+    
+    //load a local html file (working)
+    func loadHTMLFile(fileName: String) {
+        let webView = WKWebView(frame: self.view.frame)
+        let localfilePath = NSBundle.mainBundle().URLForResource(fileName, withExtension: "html");
         let req = NSURLRequest(URL: localfilePath!);
         webView.loadRequest(req)
         self.view.addSubview(webView)
