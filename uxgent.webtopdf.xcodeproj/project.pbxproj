@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5234E3BD1D282823002900F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3BC1D282823002900F4 /* AppDelegate.swift */; };
+		5234E3BF1D282823002900F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3BE1D282823002900F4 /* ViewController.swift */; };
+		5234E3C11D282823002900F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5234E3C01D282823002900F4 /* Assets.xcassets */; };
+		5234E3C41D282823002900F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5234E3C21D282823002900F4 /* Main.storyboard */; };
+		5234E3CF1D282823002900F4 /* uxgent_webtopdfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3CE1D282823002900F4 /* uxgent_webtopdfTests.swift */; };
+		5234E3DA1D282823002900F4 /* uxgent_webtopdfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3D91D282823002900F4 /* uxgent_webtopdfUITests.swift */; };
+		52851CB11D28359E001BA875 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 52851CB01D28359E001BA875 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5234E3CB1D282823002900F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5234E3B11D282823002900F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5234E3B81D282823002900F4;
+			remoteInfo = uxgent.webtopdf;
+		};
+		5234E3D61D282823002900F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5234E3B11D282823002900F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5234E3B81D282823002900F4;
+			remoteInfo = uxgent.webtopdf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5234E3B91D282823002900F4 /* uxgent.webtopdf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uxgent.webtopdf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5234E3BC1D282823002900F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5234E3BE1D282823002900F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5234E3C01D282823002900F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5234E3C31D282823002900F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5234E3C51D282823002900F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5234E3CA1D282823002900F4 /* uxgent.webtopdfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uxgent.webtopdfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5234E3CE1D282823002900F4 /* uxgent_webtopdfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uxgent_webtopdfTests.swift; sourceTree = "<group>"; };
+		5234E3D01D282823002900F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5234E3D51D282823002900F4 /* uxgent.webtopdfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uxgent.webtopdfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5234E3D91D282823002900F4 /* uxgent_webtopdfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uxgent_webtopdfUITests.swift; sourceTree = "<group>"; };
+		5234E3DB1D282823002900F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52851CB01D28359E001BA875 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5234E3B61D282823002900F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5234E3C71D282823002900F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5234E3D21D282823002900F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5234E3B01D282823002900F4 = {
+			isa = PBXGroup;
+			children = (
+				5234E3BB1D282823002900F4 /* uxgent.webtopdf */,
+				5234E3CD1D282823002900F4 /* uxgent.webtopdfTests */,
+				5234E3D81D282823002900F4 /* uxgent.webtopdfUITests */,
+				5234E3BA1D282823002900F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5234E3BA1D282823002900F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5234E3B91D282823002900F4 /* uxgent.webtopdf.app */,
+				5234E3CA1D282823002900F4 /* uxgent.webtopdfTests.xctest */,
+				5234E3D51D282823002900F4 /* uxgent.webtopdfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5234E3BB1D282823002900F4 /* uxgent.webtopdf */ = {
+			isa = PBXGroup;
+			children = (
+				52851CB01D28359E001BA875 /* www */,
+				5234E3BC1D282823002900F4 /* AppDelegate.swift */,
+				5234E3BE1D282823002900F4 /* ViewController.swift */,
+				5234E3C01D282823002900F4 /* Assets.xcassets */,
+				5234E3C21D282823002900F4 /* Main.storyboard */,
+				5234E3C51D282823002900F4 /* Info.plist */,
+			);
+			path = uxgent.webtopdf;
+			sourceTree = "<group>";
+		};
+		5234E3CD1D282823002900F4 /* uxgent.webtopdfTests */ = {
+			isa = PBXGroup;
+			children = (
+				5234E3CE1D282823002900F4 /* uxgent_webtopdfTests.swift */,
+				5234E3D01D282823002900F4 /* Info.plist */,
+			);
+			path = uxgent.webtopdfTests;
+			sourceTree = "<group>";
+		};
+		5234E3D81D282823002900F4 /* uxgent.webtopdfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5234E3D91D282823002900F4 /* uxgent_webtopdfUITests.swift */,
+				5234E3DB1D282823002900F4 /* Info.plist */,
+			);
+			path = uxgent.webtopdfUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5234E3B81D282823002900F4 /* uxgent.webtopdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5234E3DE1D282823002900F4 /* Build configuration list for PBXNativeTarget "uxgent.webtopdf" */;
+			buildPhases = (
+				5234E3B51D282823002900F4 /* Sources */,
+				5234E3B61D282823002900F4 /* Frameworks */,
+				5234E3B71D282823002900F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uxgent.webtopdf;
+			productName = uxgent.webtopdf;
+			productReference = 5234E3B91D282823002900F4 /* uxgent.webtopdf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5234E3C91D282823002900F4 /* uxgent.webtopdfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5234E3E11D282823002900F4 /* Build configuration list for PBXNativeTarget "uxgent.webtopdfTests" */;
+			buildPhases = (
+				5234E3C61D282823002900F4 /* Sources */,
+				5234E3C71D282823002900F4 /* Frameworks */,
+				5234E3C81D282823002900F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5234E3CC1D282823002900F4 /* PBXTargetDependency */,
+			);
+			name = uxgent.webtopdfTests;
+			productName = uxgent.webtopdfTests;
+			productReference = 5234E3CA1D282823002900F4 /* uxgent.webtopdfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5234E3D41D282823002900F4 /* uxgent.webtopdfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5234E3E41D282823002900F4 /* Build configuration list for PBXNativeTarget "uxgent.webtopdfUITests" */;
+			buildPhases = (
+				5234E3D11D282823002900F4 /* Sources */,
+				5234E3D21D282823002900F4 /* Frameworks */,
+				5234E3D31D282823002900F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5234E3D71D282823002900F4 /* PBXTargetDependency */,
+			);
+			name = uxgent.webtopdfUITests;
+			productName = uxgent.webtopdfUITests;
+			productReference = 5234E3D51D282823002900F4 /* uxgent.webtopdfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5234E3B11D282823002900F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = uxgent;
+				TargetAttributes = {
+					5234E3B81D282823002900F4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5234E3C91D282823002900F4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5234E3B81D282823002900F4;
+					};
+					5234E3D41D282823002900F4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5234E3B81D282823002900F4;
+					};
+				};
+			};
+			buildConfigurationList = 5234E3B41D282823002900F4 /* Build configuration list for PBXProject "uxgent.webtopdf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5234E3B01D282823002900F4;
+			productRefGroup = 5234E3BA1D282823002900F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5234E3B81D282823002900F4 /* uxgent.webtopdf */,
+				5234E3C91D282823002900F4 /* uxgent.webtopdfTests */,
+				5234E3D41D282823002900F4 /* uxgent.webtopdfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5234E3B71D282823002900F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52851CB11D28359E001BA875 /* www in Resources */,
+				5234E3C11D282823002900F4 /* Assets.xcassets in Resources */,
+				5234E3C41D282823002900F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5234E3C81D282823002900F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5234E3D31D282823002900F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5234E3B51D282823002900F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5234E3BF1D282823002900F4 /* ViewController.swift in Sources */,
+				5234E3BD1D282823002900F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5234E3C61D282823002900F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5234E3CF1D282823002900F4 /* uxgent_webtopdfTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5234E3D11D282823002900F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5234E3DA1D282823002900F4 /* uxgent_webtopdfUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5234E3CC1D282823002900F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5234E3B81D282823002900F4 /* uxgent.webtopdf */;
+			targetProxy = 5234E3CB1D282823002900F4 /* PBXContainerItemProxy */;
+		};
+		5234E3D71D282823002900F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5234E3B81D282823002900F4 /* uxgent.webtopdf */;
+			targetProxy = 5234E3D61D282823002900F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5234E3C21D282823002900F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5234E3C31D282823002900F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5234E3DC1D282823002900F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5234E3DD1D282823002900F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5234E3DF1D282823002900F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = uxgent.webtopdf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "uxgent.uxgent-webtopdf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5234E3E01D282823002900F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = uxgent.webtopdf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "uxgent.uxgent-webtopdf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5234E3E21D282823002900F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = uxgent.webtopdfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "uxgent.uxgent-webtopdfTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uxgent.webtopdf.app/Contents/MacOS/uxgent.webtopdf";
+			};
+			name = Debug;
+		};
+		5234E3E31D282823002900F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = uxgent.webtopdfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "uxgent.uxgent-webtopdfTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uxgent.webtopdf.app/Contents/MacOS/uxgent.webtopdf";
+			};
+			name = Release;
+		};
+		5234E3E51D282823002900F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = uxgent.webtopdfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "uxgent.uxgent-webtopdfUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = uxgent.webtopdf;
+			};
+			name = Debug;
+		};
+		5234E3E61D282823002900F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = uxgent.webtopdfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "uxgent.uxgent-webtopdfUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = uxgent.webtopdf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5234E3B41D282823002900F4 /* Build configuration list for PBXProject "uxgent.webtopdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5234E3DC1D282823002900F4 /* Debug */,
+				5234E3DD1D282823002900F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5234E3DE1D282823002900F4 /* Build configuration list for PBXNativeTarget "uxgent.webtopdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5234E3DF1D282823002900F4 /* Debug */,
+				5234E3E01D282823002900F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5234E3E11D282823002900F4 /* Build configuration list for PBXNativeTarget "uxgent.webtopdfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5234E3E21D282823002900F4 /* Debug */,
+				5234E3E31D282823002900F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5234E3E41D282823002900F4 /* Build configuration list for PBXNativeTarget "uxgent.webtopdfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5234E3E51D282823002900F4 /* Debug */,
+				5234E3E61D282823002900F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5234E3B11D282823002900F4 /* Project object */;
+}
