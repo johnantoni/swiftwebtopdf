@@ -8,6 +8,7 @@
 
 import Cocoa
 import WebKit
+import Quartz
 
 class ViewController: NSViewController {
 
@@ -45,8 +46,20 @@ class ViewController: NSViewController {
         let localfilePath = NSBundle.mainBundle().URLForResource(fileName, withExtension: "html");
         let req = NSURLRequest(URL: localfilePath!);
         webView.loadRequest(req)
+        
+        // resize content via meta tags
+        //var scriptContent = "var meta = document.createElement('meta');"
+        //scriptContent += "meta.name='viewport';"
+        //scriptContent += "meta.content='width=device-width';"
+        //scriptContent += "document.getElementsByTagName('head')[0].appendChild(meta);"
+        //webView.evaluateJavaScript(scriptContent, completionHandler: nil)
+        
         self.view.addSubview(webView)
     }
+    
+    func generatePdf() {
+    }
+    
     
 }
 
