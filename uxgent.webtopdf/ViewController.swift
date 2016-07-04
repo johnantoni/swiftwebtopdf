@@ -30,11 +30,9 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //loadHTMLFile("www/index")
         loadHTMLString()
     }
     
-    // load html string (working)
     func loadHTMLString() {
         let webView = WKWebView(frame: self.view.frame)
         webView.loadHTMLString("<html><body><p>Hello, World!</p></body></html>", baseURL: nil)
@@ -42,7 +40,6 @@ class ViewController: NSViewController {
         createPDFFromView(webView, saveToDocumentWithFileName: "test.pdf")
     }
     
-    // load url (working)
     func loadURL() {
         let webView = WKWebView(frame: self.view.frame)
         let url = NSURL(string: "https://www.google.ca")
@@ -51,7 +48,6 @@ class ViewController: NSViewController {
         self.view.addSubview(webView)
     }
     
-    //load a local html file (working)
     func loadHTMLFile(fileName: String) {
         let webView = WKWebView(frame: self.view.frame)
         let localfilePath = NSBundle.mainBundle().URLForResource(fileName, withExtension: "html");
@@ -59,41 +55,8 @@ class ViewController: NSViewController {
         webView.loadRequest(req)
         webView.allowsBackForwardNavigationGestures = false
         self.view.addSubview(webView)
-
-        //let imgSize = webView.bounds.size
-        //let bir = self.view.bitmapImageRepForCachingDisplayInRect(webView.bounds)
-
-        //bir?.size = imgSize
-        //print(imgSize)
-
-        //webView.cacheDisplayInRect(webView.bounds, toBitmapImageRep:bir!)
-
-        //print(self.view.canDrawSubviewsIntoLayer)
-        
-        //print(bir)
-        
-        //let image = NSImage(size:imgSize)
-        //image.addRepresentation(bir!)
-        
-        //print(image)
-
-        createPDFFromView(view, saveToDocumentWithFileName: "test.pdf")
-
-        let webData = view.dataWithPDFInsideRect(view.bounds)
-        let webImage = NSImage.init(data: webData)
-        
-        saveSnapshot(webImage!)
     }
     
-    func saveSnapshot(img: NSImage)
-    {
-        if let bits = img.representations.first as? NSBitmapImageRep {
-            print(bits)
-            let data = bits.representationUsingType(.NSPNGFileType, properties: [:])
-            data?.writeToFile("/Users/john/Documents/test.png", atomically: true)
-        }
-    }
-
     func createPDFFromView(view: NSView, saveToDocumentWithFileName fileName: String) {
         let pdfData = view.dataWithPDFInsideRect(view.bounds)
         if let documentDirectories = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first {

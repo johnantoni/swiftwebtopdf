@@ -670,7 +670,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="uxgent_webtopdf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="485"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="219"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                     <connections>
@@ -679,7 +679,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="762.5"/>
+            <point key="canvasLocation" x="75" y="629.5"/>
         </scene>
     </scenes>
 </document>
