@@ -48,7 +48,9 @@ class ViewController: NSViewController {
     }
     
     func loadHTMLFile(fileName: String) {
-        let webView = WebView(frame: self.view.frame)
+        let pageRect = NSRect(x: 0, y: 0, width: 450, height: 800)
+        let webView = WebView(frame: pageRect)
+        
         let localfilePath = NSBundle.mainBundle().URLForResource(fileName, withExtension: "html");
         let req = NSURLRequest(URL: localfilePath!);
         webView.mainFrame.loadRequest(req)
@@ -58,9 +60,14 @@ class ViewController: NSViewController {
         let delay = 1 * Double(NSEC_PER_SEC)
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         dispatch_after(time, dispatch_get_main_queue()) {
+
+            // replace text
+            let runScript = webView.stringByEvaluatingJavaScriptFromString("document.getElementById('address1').innerHTML = '1 Penny Lane'")
+
             // works!
-            let data = webView.dataWithPDFInsideRect(webView.frame)
+            let data = webView.dataWithPDFInsideRect(pageRect)
             let doc = PDFDocument.init(data: data)
+    
             doc.writeToFile("/Users/john/Desktop/test.pdf")
             
             // works!
