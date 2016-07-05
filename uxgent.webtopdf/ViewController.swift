@@ -8,6 +8,7 @@
 
 import Cocoa
 import WebKit
+import Quartz
 
 public enum NSBitmapImageFileType : UInt {
     
@@ -20,8 +21,6 @@ public enum NSBitmapImageFileType : UInt {
 }
 
 class ViewController: NSViewController {
-
-    @IBOutlet var containerView: NSView!
     
     override func loadView() {
         super.loadView()
@@ -30,7 +29,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadHTMLString()
+        loadHTMLFile("www/index")
     }
     
     func loadHTMLString() {
@@ -49,12 +48,35 @@ class ViewController: NSViewController {
     }
     
     func loadHTMLFile(fileName: String) {
-        let webView = WKWebView(frame: self.view.frame)
+        let webView = WebView(frame: self.view.frame)
         let localfilePath = NSBundle.mainBundle().URLForResource(fileName, withExtension: "html");
         let req = NSURLRequest(URL: localfilePath!);
-        webView.loadRequest(req)
-        webView.allowsBackForwardNavigationGestures = false
+        webView.mainFrame.loadRequest(req)
         self.view.addSubview(webView)
+        
+        // needs 1 second delay
+        let delay = 1 * Double(NSEC_PER_SEC)
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            // works!
+            let data = webView.dataWithPDFInsideRect(webView.frame)
+            let doc = PDFDocument.init(data: data)
+            doc.writeToFile("/Users/john/Desktop/test.pdf")
+            
+            // works!
+            let printInfo = NSPrintInfo.sharedPrintInfo()
+            let printOperation = NSPrintOperation(view: webView.mainFrame.frameView, printInfo: printInfo)
+            printOperation.runOperation()
+        }
+    }
+    
+    func saveSnapshot(img: NSImage)
+    {
+        if let bits = img.representations.first as? NSBitmapImageRep {
+            print(bits)
+            let data = bits.representationUsingType(.NSPNGFileType, properties: [:])
+            data?.writeToFile("/Users/john/Documents/test.png", atomically: true)
+        }
     }
     
     func createPDFFromView(view: NSView, saveToDocumentWithFileName fileName: String) {
