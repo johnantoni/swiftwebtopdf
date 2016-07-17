@@ -62,13 +62,13 @@ class ViewController: NSViewController {
         dispatch_after(time, dispatch_get_main_queue()) {
 
             // replace text
-            let runScript = webView.stringByEvaluatingJavaScriptFromString("document.getElementById('address1').innerHTML = '1 Penny Lane'")
+            _ = webView.stringByEvaluatingJavaScriptFromString("document.getElementById('address1').innerHTML = '1 Penny Lane'")
 
             // works!
             let data = webView.dataWithPDFInsideRect(pageRect)
             let doc = PDFDocument.init(data: data)
     
-            doc.writeToFile("/Users/john/Desktop/test.pdf")
+            doc!.writeToFile("/Users/john/Desktop/test.pdf")
             
             // works!
             let printInfo = NSPrintInfo.sharedPrintInfo()
@@ -81,7 +81,7 @@ class ViewController: NSViewController {
     {
         if let bits = img.representations.first as? NSBitmapImageRep {
             print(bits)
-            let data = bits.representationUsingType(.NSPNGFileType, properties: [:])
+            let data = bits.representationUsingType(.PNG, properties: [:])
             data?.writeToFile("/Users/john/Documents/test.png", atomically: true)
         }
     }
